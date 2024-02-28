@@ -1,8 +1,11 @@
 import React from 'react'
+import { AddTaskForm } from './AddTaskForm'
 
 export const TaskList = () => {
   return (
-    <div>TaskList</div>
+    <div className='TaskList'>
+        <AddTaskForm/>
+    </div>
   )
 }
 
