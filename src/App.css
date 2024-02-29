@@ -1,10 +1,10 @@
 #root {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: auto;
 }
 
-.task-list {
+.TaskList {
   align-self: center;
   background-color: white;
   border-radius: 5px;
@@ -83,7 +83,7 @@
   justify-content: space-between;
 }
 
-.add-todo form input[type="text"] {
+.task-input[type="text"] {
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid #8f8f8f;
@@ -116,7 +116,7 @@
   color: #c2c2c2;
 }
 
-.todo-admin button {
+.todo-btn {
   background-color: transparent;
   border: 1px solid #a071b8;
   color: #a071b8;
