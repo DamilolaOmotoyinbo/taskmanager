@@ -7,10 +7,12 @@ export const AddTaskForm = ({addTask}) => {
     const handleSubmit = e => {
         e.preventDefault();
         addTask(value)
+
+        setValue("")
     }
   return (
     <form className='TaskForm' onSubmit={handleSubmit}>
-        <input type='text' className='taskinput' placeholder='Input your task here'onChange={(e) => setValue (e.target.value)}/>
+        <input type='text' className='task-input' value = {value} placeholder='Input your task here'onChange={(e) => setValue (e.target.value)}/>
         <button type='submit' className='task-btn'>Add Task</button>
     </form>
   )

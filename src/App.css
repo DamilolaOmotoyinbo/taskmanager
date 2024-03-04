@@ -4,11 +4,40 @@
   height: auto;
 }
 
+.App{
+  display: flex;
+  /* z-index: 1;
+  background-color: black;
+  width: 100%; */
+}
+
+.icons{
+  display: flex;
+  margin-left: 200px;
+}
+
+.completed{
+  text-decoration: line-through;
+}
+.Task{
+  display: flex;
+  align-items: center;
+}
+
+.icons > svg {
+  margin-right: 20px;
+}
+
+.p{
+  padding: 30px;
+}
+
 .TaskList {
-  align-self: center;
-  background-color: white;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: skyblue;
   border-radius: 5px;
-  width: 400px;
+  /* width: 400px; */
 }
 
 .task-list h1 {
