@@ -27,6 +27,10 @@ export const TaskList = () => {
     setTasks(tasks.map(task => task.id === id ? {...task, ...updatedTask} : task));
   };
 
+  const editTask = (id, updatedTask) => {
+    setTasks(tasks.map(task => task.id === id ? {...task, ...updatedTask} : task));
+  };
+
   return (
     <div className="TaskList">
       <h1>Task Manager</h1>
@@ -35,7 +39,8 @@ export const TaskList = () => {
         task.isEditing ? (
           <EditTaskForm key={index} editTask={updatedTask => editTaskById(task.id, updatedTask)} task={task} toggleEdit={() => toggleEdit(task.id)} />
         ) : (
-          <TaskItem key={index} task={task} toggleComplete={() => toggleComplete(task.id)} deleteTask={() => deleteTask(task.id)} toggleEdit={() => toggleEdit(task.id)} />
+          <TaskItem key={index} task={task} toggleComplete={() => toggleComplete(task.id)} deleteTask={() => deleteTask(task.id)} editTask={(id, updatedTask) => editTask(id, updatedTask)}/>
+
         )
       ))}
     </div>
