@@ -1,7 +1,9 @@
 #root {
   display: flex;
   justify-content: center;
-  height: auto;
+  /* height: 100vh; */
+  background-color: blueviolet;
+  width: 100%;
 }
 
 .App{
@@ -19,6 +21,22 @@
 .Task{
   display: flex;
   align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  justify-content:space-between;
+ }
+
+.text{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.mark{
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: smaller;
 }
 
 .icons > svg {
@@ -30,11 +48,14 @@
 }
 
 .TaskList {
-  /* align-items: center; */
-  justify-content: center;
-  background-color: skyblue;
+  text-align: center;
+  background-color:pink;
   border-radius: 5px;
-  /* width: 400px; */
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100vh;
 }
 
 
@@ -80,4 +101,20 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .icons {
+    margin-left: 10px;
+  }
+  .Task {
+    margin: 10px;
+  }
+  .text {
+    margin: 10px;
+  }
+  .TaskList {
+    margin: 10px;
+  }
 }

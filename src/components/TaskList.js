@@ -33,8 +33,10 @@ export const TaskList = () => {
 
   return (
     <div className="TaskList">
-      <h1>Task Manager</h1>
+      <h1 className="text">Task Manager</h1>
+      <h4 className="mark">Tap on task to mark as done</h4>
       <AddTaskForm addTask={addTask} />
+      {/* <p>Go to the gym</p> */}
       {tasks.map((task, index) => (
         task.isEditing ? (
           <EditTaskForm key={index} editTask={updatedTask => editTaskById(task.id, updatedTask)} task={task} toggleEdit={() => toggleEdit(task.id)} />
