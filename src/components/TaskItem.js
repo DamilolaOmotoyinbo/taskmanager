@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
-import { EditTaskForm } from './EditTaskForm'; // Import EditTaskForm component
+// import { EditTaskForm } from './EditTaskForm'; // Import EditTaskForm component
 
 export const TaskItem = ({ task, toggleComplete, deleteTask, editTask }) => {
   const [isEditing, setIsEditing] = useState(false); // State to manage editing mode
